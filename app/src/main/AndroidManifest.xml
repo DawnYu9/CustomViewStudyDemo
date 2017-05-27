@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bubble.customviewstudydemo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.bubble.customviewstudydemo.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.bubble.customviewstudydemo.activity.CustomImgActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bubble.customviewstudydemo.activity.CustomRandomTvActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bubble.customviewstudydemo.activity.CustomProgressBarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bubble.customviewstudydemo.activity.CustomVolumControlActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bubble.customviewstudydemo.activity.CustomImgContainerActivity"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

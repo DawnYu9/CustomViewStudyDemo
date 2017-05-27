@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_customtitleview"
+            style="@style/btn"
+            android:text="验证码" />
+
+        <Button
+            android:id="@+id/btn_customimageview"
+            style="@style/btn"
+            android:text="CustomImageView" />
+
+        <Button
+            android:id="@+id/btn_customprogressbar"
+            style="@style/btn"
+            android:text="环形进度条" />
+
+        <Button
+            android:id="@+id/btn_customvolumcontrolbar"
+            style="@style/btn"
+            android:text="音量调节" />
+
+        <Button
+            android:id="@+id/btn_customimgcontainer"
+            style="@style/btn"
+            android:text="CustomImgContainer" />
+    </LinearLayout>
+</ScrollView>

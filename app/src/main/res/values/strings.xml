@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CustomViewStudyDemo</string>
+    <string name="custom_length_hint">"match_parent"/"wrap_content"/整数dp</string>
+</resources>
