@@ -5,8 +5,8 @@
 ![CustomImg](https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/pic/CustomImg.png "CustomImg")
 ![CustomImgContainer](https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/pic/CustomImgContainer.png "CustomImgContainer")
 ![CustomProgressBar](https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/gif/CustomProgressBar.gif "CustomProgressBar")
-![CustomRandomTextView](https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/pic/CustomRandomTextView.gif "CustomRandomTextView")
-![CustomVolumControlBar](https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/pic/CustomVolumControlBar.gif "CustomVolumControlBar")    
+![CustomRandomTextView](https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/gif/CustomRandomTextView.gif "CustomRandomTextView")
+![CustomVolumControlBar](https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/gif/CustomVolumControlBar.gif "CustomVolumControlBar")    
 
 
 # 参考博客
