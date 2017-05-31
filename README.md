@@ -1,12 +1,12 @@
 > 学习鸿洋大神的博客专辑[【Android 自定义控件之起步】](http://blog.csdn.net/lmj623565791/article/category/2680591)后所做的demo。
 
 # 截图
-![main](https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/pic/main.png "main")
-![CustomImg](https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/pic/CustomImg.png "CustomImg")
-![CustomImgContainer](https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/pic/CustomImgContainer.png "CustomImgContainer")
-![CustomProgressBar](https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/gif/CustomProgressBar.gif "CustomProgressBar")
-![CustomRandomTextView](https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/gif/CustomRandomTextView.gif "CustomRandomTextView")
-![CustomVolumControlBar](https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/gif/CustomVolumControlBar.gif "CustomVolumControlBar")    
+<img src="https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/pic/main.png" width = "50%" alt = "main.png"/>
+<img src="https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/pic/CustomImg.png" width = "50%" alt = "CustomImg.png"/>
+<img src="https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/pic/CustomImgContainer.png" width = "50%" alt = "CustomImgContainer.png"/>
+<img src="https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/gif/CustomProgressBar.gif" width = "50%" alt = "CustomProgressBar.gif"/>
+<img src="https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/gif/CustomRandomTextView.gif" width = "50%" alt = "CustomRandomTextView.gif"/>
+<img src="https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/gif/CustomVolumControlBar.gif" width = "50%" alt = "CustomVolumControlBar.gif"/>
 
 
 # 参考博客
