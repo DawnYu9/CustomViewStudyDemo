@@ -33,5 +33,10 @@
             android:id="@+id/btn_customimgcontainer"
             style="@style/btn"
             android:text="CustomImgContainer" />
+
+        <TextView
+            android:id="@+id/tv_github"
+            style="@style/text"
+            android:text="源码：" />
     </LinearLayout>
 </ScrollView>

@@ -54,9 +54,7 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     /**
-     * 初始化
-     *
-     * @param layoutResID
+     * 初始化封装，子类调用
      */
     public void init(int layoutResID) {
         setContentView(layoutResID);
@@ -66,19 +64,22 @@ public class BaseActivity extends AppCompatActivity {
         registListener();
     }
 
+    /**
+     * 初始化控件，子类复写
+     */
     public void initView() {
         tv_blog = (TextView) findViewById(R.id.tv_blog);
         btn_save = (Button) findViewById(R.id.btn_save);
     }
 
     /**
-     * 初始化数据
+     * 初始化数据，子类复写
      */
     public void initData() {
     }
 
     /**
-     * 注册监听事件
+     * 注册监听事件，子类复写
      */
     public void registListener() {
         if (btn_save != null) {
@@ -86,17 +87,33 @@ public class BaseActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * 子类调用
+     */
     public View.OnClickListener clickListener = new View.OnClickListener() {
 
         @Override
         public void onClick(View v) {
-            switch (v.getId()) {
-                case R.id.btn_save:
-                    save();
-                    break;
-            }
+            onMyClick(v);
         }
     };
+
+    /**
+     * 子类复写
+     */
+    public void onMyClick(View v) {
+        switch (v.getId()) {
+            case R.id.btn_save:
+                save();
+                break;
+        }
+    }
+
+    /**
+     * 保存设置，子类复写
+     */
+    public void save() {
+    }
 
     /**
      * 设置点击跳转博客页面
@@ -107,13 +124,6 @@ public class BaseActivity extends AppCompatActivity {
         }
         tv_blog.setText(Html.fromHtml("参考：<a href='" + blogUrl + "'>" + blogTitle + "</a>"));
         tv_blog.setMovementMethod(LinkMovementMethod.getInstance());
-    }
-
-    /**
-     * 保存设置
-     */
-    public void save() {
-
     }
 
     /**
