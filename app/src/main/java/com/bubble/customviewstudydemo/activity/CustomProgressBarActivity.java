@@ -21,6 +21,7 @@ public class CustomProgressBarActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         init(R.layout.custom_pgbar);
     }
 
