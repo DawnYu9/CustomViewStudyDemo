@@ -4,12 +4,12 @@
 
 
 # 预览
-![main.png](/preview/main.png)
-![CustomImg.png](/preview/CustomImg.png)
-![CustomImgContainer.png](/preview/CustomImgContainer.png)
-![CustomProgressBar.gif](/preview/CustomProgressBar.gif)
-![CustomRandomTextView.gif](/preview/CustomRandomTextView.gif)
-![CustomVolumControlBar.gif](/preview/CustomVolumControlBar.gif)
+![main.png](/preview/pic/main.png)
+![CustomImg.png](/preview/pic/CustomImg.png)
+![CustomImgContainer.png](/preview/pic/CustomImgContainer.png)
+![CustomProgressBar.gif](/preview/gif/CustomProgressBar.gif)
+![CustomRandomTextView.gif](/preview/gif/CustomRandomTextView.gif)
+![CustomVolumControlBar.gif](/preview/gif/CustomVolumControlBar.gif)
 
 # 参考博客
 
