@@ -1,13 +1,15 @@
 > 学习鸿洋大神的博客专辑[【Android 自定义控件之起步】](http://blog.csdn.net/lmj623565791/article/category/2680591)后所做的demo。
 
-# 截图
-<img src="https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/pic/main.png" width = "50%" alt = "main.png"/>
-<img src="https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/pic/CustomImg.png" width = "50%" alt = "CustomImg.png"/>
-<img src="https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/pic/CustomImgContainer.png" width = "50%" alt = "CustomImgContainer.png"/>
-<img src="https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/gif/CustomProgressBar.gif" width = "50%" alt = "CustomProgressBar.gif"/>
-<img src="https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/gif/CustomRandomTextView.gif" width = "50%" alt = "CustomRandomTextView.gif"/>
-<img src="https://github.com/codingbubble/CustomViewStudyDemo/blob/master/screenshot/gif/CustomVolumControlBar.gif" width = "50%" alt = "CustomVolumControlBar.gif"/>
+# 优化部分
 
+
+# 预览
+![main.png](/preview/main.png)
+![CustomImg.png](/preview/CustomImg.png)
+![CustomImgContainer.png](/preview/CustomImgContainer.png)
+![CustomProgressBar.gif](/preview/CustomProgressBar.gif)
+![CustomRandomTextView.gif](/preview/CustomRandomTextView.gif)
+![CustomVolumControlBar.gif](/preview/CustomVolumControlBar.gif)
 
 # 参考博客
 

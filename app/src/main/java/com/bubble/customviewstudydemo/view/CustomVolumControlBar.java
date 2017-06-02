@@ -23,12 +23,12 @@ import com.bubble.customviewstudydemo.utils.StringUtils;
 
 public class CustomVolumControlBar extends CustomBaseView {
     /**
-     * 第一层的颜色
+     * 进度条填充色
      */
     private int progressColor;
 
     /**
-     * 第二层的颜色
+     * 进度条背景色
      */
     private int backgroundColor;
 
