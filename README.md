@@ -1,11 +1,14 @@
 > 学习鸿洋大神的博客专辑[【Android 自定义控件之起步】](http://blog.csdn.net/lmj623565791/article/category/2680591)后所做的demo。
 
+> 欢迎讨论、建议和指正错误 (^_^)
+
 ## 优化部分
 
 ### [Android 自定义View (三) 圆环交替 等待效果](http://blog.csdn.net/lmj623565791/article/details/24500107)
 1. 优化颜色交换逻辑，使用中间变量`tempColor`
 2. 线程增加`stopThread`停止标识判断，离开页面时关闭线程
 
+    `View`中
     ``` java
     private boolean stopThread = false;
     
@@ -33,7 +36,23 @@
             }
         }
     }.start();
+    
+    /**
+     * 关闭线程
+     */
+    public void stopThread(boolean stop) {
+        stopThread = stop;
+    }
     ```       
+
+    `Activity`中
+    ```
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        customProgressBar.stopThread(true);
+    }
+    ```
 
 3. 重写`onMeasure()`方法，支持`wrap_content`，并设定控件为正方形
 
@@ -214,5 +233,5 @@
 
 [Android自定义view详解](https://shaohui.me/2016/07/08/Android%E8%87%AA%E5%AE%9A%E4%B9%89view%E8%AF%A6%E8%A7%A3/)
 
-
+> 感谢以上作者以及部分评论的作者给予的思路和帮助 (^_^)
 

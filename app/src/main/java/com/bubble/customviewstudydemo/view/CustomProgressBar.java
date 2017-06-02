@@ -214,5 +214,4 @@ public class CustomProgressBar extends CustomBaseView {
     public void stopThread(boolean stop) {
         stopThread = stop;
     }
-
 }
