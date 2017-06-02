@@ -183,12 +183,12 @@ public class CustomProgressBar extends CustomBaseView {
         //画笔在圆环的中心线上
         //画进度条
         mPaint.setColor(progressColor); // 设置进度条的颜色
-//        canvas.drawCircle(centre, centre, radius, mPaint); // 画圆环
+        //canvas.drawCircle(centre, centre, radius, mPaint); // 画圆环
         canvas.drawArc(oval, -90, mProgress, false, mPaint);//画弧
 
         //画背景条
         mPaint.setColor(backgroundColor); // 设置背景条的颜色
-//        canvas.drawArc(oval, -90, mProgress, false, mPaint); // 根据进度画圆弧
+        //canvas.drawArc(oval, -90, mProgress, false, mPaint); // 根据进度画圆弧
         canvas.drawArc(oval, mProgress - 90, 360 - mProgress, false, mPaint);//画弧
 
         //更新百分比数字

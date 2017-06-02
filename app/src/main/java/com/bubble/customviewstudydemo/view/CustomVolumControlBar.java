@@ -175,11 +175,7 @@ public class CustomVolumControlBar extends CustomBaseView {
     }
 
     /**
-     * 根据参数画出每个小块
-     *
-     * @param canvas
-     * @param centre
-     * @param radius
+     * 根据参数画出每个进度块
      */
     private void drawOval(Canvas canvas, int centre, int radius) {
         RectF oval = new RectF(centre - radius, centre - radius, centre + radius, centre + radius); // 用于定义的圆弧的形状和大小的界限
@@ -202,12 +198,12 @@ public class CustomVolumControlBar extends CustomBaseView {
         //根据需要画的个数以及间隙计算每个进度块的长度（以圆周长360为基准）
         float itemSize = (mCentralAangle * 1.0f - mSplitCount * mSplitSize) / mCount;
 
-        mPaint.setColor(progressColor); // 设置第一层圆环的颜色
+        mPaint.setColor(progressColor); // 画进度条
         for (int i = 0; i < mCount; i++) {
             canvas.drawArc(oval, startAngle + i * (itemSize + mSplitSize), itemSize, false, mPaint); // 根据进度画圆弧
         }
 
-        mPaint.setColor(backgroundColor); // 设置第二层圆环的颜色
+        mPaint.setColor(backgroundColor); // 画进度条背景色
         for (int i = 0; i < mCurrentCount; i++) {
             canvas.drawArc(oval, startAngle + i * (itemSize + mSplitSize), itemSize, false, mPaint); // 根据进度画圆弧
         }
