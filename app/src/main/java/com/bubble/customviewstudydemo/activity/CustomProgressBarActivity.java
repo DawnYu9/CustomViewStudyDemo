@@ -9,10 +9,12 @@ import com.bubble.customviewstudydemo.utils.StringUtils;
 import com.bubble.customviewstudydemo.view.CustomProgressBar;
 
 /**
- * @description 圆环进度条
- * @date 17/5/18
+ * description: 圆环进度条
+ * version:
+ *
+ * @author bubble
+ * @date 2017/5/18
  */
-
 public class CustomProgressBarActivity extends BaseActivity {
     private EditText et_length, et_padding, et_speed;
 
@@ -22,7 +24,7 @@ public class CustomProgressBarActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        init(R.layout.custom_pgbar);
+        init(R.layout.activity_custom_pgbar);
     }
 
     @Override

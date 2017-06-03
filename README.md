@@ -5,6 +5,8 @@
 ## 优化部分
 
 ### [Android 自定义View (三) 圆环交替 等待效果](http://blog.csdn.net/lmj623565791/article/details/24500107)
+> code: [CustomProgressBar.java](/app/src/main/java/com/bubble/customviewstudydemo/view/CustomProgressBar.java)
+
 1. 优化颜色交换逻辑，使用中间变量`tempColor`
 2. 线程增加`stopThread`停止标识判断，离开页面时关闭线程
 
@@ -112,6 +114,8 @@
     ```
 
 ### [Android 自定义View (四) 视频音量调控](http://blog.csdn.net/lmj623565791/article/details/24529807)
+> code: [CustomVolumControlBar.java](/app/src/main/java/com/bubble/customviewstudydemo/view/CustomVolumControlBar.java)
+
 1. 重写`onMeasure()`方法，支持`wrap_content`，并设定控件为正方形(见上)
 2. 优化音量加减操作，支持上下滑动手势连续调节音量大小
 

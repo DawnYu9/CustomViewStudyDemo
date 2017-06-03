@@ -5,16 +5,18 @@ import android.os.Bundle;
 import com.bubble.customviewstudydemo.R;
 
 /**
- * @description 点击切换4位随机数
- * @date 17/5/18
+ * description: 点击切换4位随机数
+ * version:
+ *
+ * @author bubble
+ * @date 2017/5/18
  */
-
 public class CustomRandomTvActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        init(R.layout.custom_random_tv);
+        init(R.layout.activity_custom_random_tv);
     }
 
     @Override

@@ -4,10 +4,12 @@ import android.content.Context;
 import android.util.TypedValue;
 
 /**
- * @description
- * @date 17/5/24
+ * description: 字符串工具类
+ * version:
+ *
+ * @author bubble
+ * @date 2017/5/24
  */
-
 public class StringUtils {
     public static boolean isNullOrEmpty(String s) {
         if (s == null || "".equals(s.trim()) || s.trim().length() == 0) {

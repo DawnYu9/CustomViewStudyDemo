@@ -7,10 +7,12 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * @description
- * @date 17/5/26
+ * description:
+ * version:
+ *
+ * @author bubble
+ * @date 2017/5/26
  */
-
 public class CustomBaseView extends View {
     public Context mContext;
 

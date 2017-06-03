@@ -15,10 +15,12 @@ import com.bubble.customviewstudydemo.R;
 import com.bubble.customviewstudydemo.utils.StringUtils;
 
 /**
- * @description
- * @date 17/5/24
+ * description:
+ * version:
+ *
+ * @author bubble
+ * @date 2017/5/24
  */
-
 public class BaseActivity extends AppCompatActivity {
     public Context mContext;
 
