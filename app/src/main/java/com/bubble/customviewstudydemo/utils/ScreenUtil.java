@@ -6,10 +6,12 @@ import android.view.Display;
 import android.view.WindowManager;
 
 /**
- * @description
- * @date 17/5/10
+ * description: 屏幕工具类
+ * version:
+ *
+ * @author bubble
+ * @date 2017/5/10
  */
-
 public class ScreenUtil {
     public static int screenWidth = 0;
     public static int screenHeight = 0;

@@ -17,6 +17,13 @@ import com.bubble.customviewstudydemo.activity.CustomVolumControlActivity;
 
 import java.util.ArrayList;
 
+/**
+ * description:
+ * version:
+ *
+ * @author bubble
+ * @date 2017/5/9
+ */
 public class MainActivity extends BaseActivity {
     private ArrayList<Button> btnList;
     private TextView tv_github;

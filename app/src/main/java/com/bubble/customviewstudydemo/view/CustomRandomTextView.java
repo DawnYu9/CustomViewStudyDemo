@@ -16,10 +16,13 @@ import java.util.Random;
 import java.util.Set;
 
 /**
- * @description 点击文本产生一个4位随机数字
+ * description: 点击文本产生一个4位随机数字
+ * version:
+ * blog: http://blog.csdn.net/lmj623565791/article/details/24252901
+ *
+ * @author bubble
  * @date 17/5/9
  */
-
 public class CustomRandomTextView extends CustomBaseView {
     /**
      * 文本

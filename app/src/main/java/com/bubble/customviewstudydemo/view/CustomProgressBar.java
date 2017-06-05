@@ -12,10 +12,13 @@ import com.bubble.customviewstudydemo.R;
 import com.bubble.customviewstudydemo.utils.StringUtils;
 
 /**
- * @description
- * @date 17/5/10
+ * description: 圆环进度条
+ * version:
+ * blog: http://blog.csdn.net/lmj623565791/article/details/24500107
+ *
+ * @author bubble
+ * @date 2017/5/10
  */
-
 public class CustomProgressBar extends CustomBaseView {
     /**
      * 进度条颜色

@@ -15,10 +15,13 @@ import android.util.TypedValue;
 import com.bubble.customviewstudydemo.R;
 
 /**
- * @description
- * @date 17/5/9
+ * description:
+ * version:
+ * blog: http://blog.csdn.net/lmj623565791/article/details/24300125
+ *
+ * @author bubble
+ * @date 2017/5/9
  */
-
 public class CustomImageView extends CustomBaseView {
     private Paint mPaint;
     private Rect mTextBound;

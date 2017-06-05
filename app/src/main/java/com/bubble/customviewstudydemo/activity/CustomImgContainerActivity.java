@@ -5,16 +5,18 @@ import android.os.Bundle;
 import com.bubble.customviewstudydemo.R;
 
 /**
- * @description
- * @date 17/5/18
+ * description:
+ * version:
+ *
+ * @author bubble
+ * @date 2017/5/18
  */
-
 public class CustomImgContainerActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        init(R.layout.custom_img_container);
+        init(R.layout.activity_custom_img_container);
     }
 
     @Override

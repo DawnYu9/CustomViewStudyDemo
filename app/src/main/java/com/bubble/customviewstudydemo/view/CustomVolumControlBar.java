@@ -17,10 +17,13 @@ import com.bubble.customviewstudydemo.R;
 import com.bubble.customviewstudydemo.utils.StringUtils;
 
 /**
- * @description
- * @date 17/5/10
+ * description: 音量控制，上下滑动调节音量
+ * version:
+ * blog: http://blog.csdn.net/lmj623565791/article/details/24529807
+ *
+ * @author bubble
+ * @date 2017/5/10
  */
-
 public class CustomVolumControlBar extends CustomBaseView {
     /**
      * 进度条填充色

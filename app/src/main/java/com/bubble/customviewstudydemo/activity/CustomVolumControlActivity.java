@@ -9,10 +9,12 @@ import com.bubble.customviewstudydemo.utils.StringUtils;
 import com.bubble.customviewstudydemo.view.CustomVolumControlBar;
 
 /**
- * @description 音量控制，上下滑动调节音量
- * @date 17/5/18
+ * description: 音量控制，上下滑动调节音量
+ * version:
+ *
+ * @author bubble
+ * @date 2017/5/18
  */
-
 public class CustomVolumControlActivity extends BaseActivity {
     private EditText et_length, et_centralAngle, et_textVisible;
     private CustomVolumControlBar customVolumControlBar;
@@ -21,7 +23,7 @@ public class CustomVolumControlActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        init(R.layout.custom_volumbar);
+        init(R.layout.activity_custom_volumbar);
     }
 
     @Override

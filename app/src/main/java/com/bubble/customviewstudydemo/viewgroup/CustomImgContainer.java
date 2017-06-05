@@ -6,10 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * @description
- * @date 17/5/16
+ * description:
+ * version:
+ *
+ * @author bubble
+ * @date 2017/5/16
  */
-
 public class CustomImgContainer extends ViewGroup {
     public CustomImgContainer(Context context) {
         super(context);
