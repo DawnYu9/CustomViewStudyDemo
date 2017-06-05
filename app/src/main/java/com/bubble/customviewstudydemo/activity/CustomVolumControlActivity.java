@@ -14,7 +14,7 @@ import com.bubble.customviewstudydemo.view.CustomVolumControlBar;
  */
 
 public class CustomVolumControlActivity extends BaseActivity {
-    private EditText et_length, et_centralAngle;
+    private EditText et_length, et_centralAngle, et_textVisible;
     private CustomVolumControlBar customVolumControlBar;
 
     @Override
@@ -30,7 +30,10 @@ public class CustomVolumControlActivity extends BaseActivity {
 
         et_length = (EditText) findViewById(R.id.et_length);
         et_centralAngle = (EditText) findViewById(R.id.et_centralAngle);
+        et_textVisible = (EditText) findViewById(R.id.et_textVisible);
+
         btn_save = (Button) findViewById(R.id.btn_save);
+
         customVolumControlBar = (CustomVolumControlBar) findViewById(R.id.customVolumControlBar);
     }
 
@@ -59,6 +62,14 @@ public class CustomVolumControlActivity extends BaseActivity {
         String centralAngle = et_centralAngle.getText().toString();
         if (!StringUtils.isNullOrEmpty(centralAngle) && StringUtils.canParseDouble(centralAngle)) {
             customVolumControlBar.setCentralAangle(Integer.parseInt(centralAngle));
+        }
+
+        //设置是否显示百分比文字
+        String textVisible = et_textVisible.getText().toString();
+        if ("0".equals(textVisible)) {
+            customVolumControlBar.setTextVisible(true);
+        } else {
+            customVolumControlBar.setTextVisible(false);
         }
     }
 }

@@ -12,6 +12,7 @@
     <attr name="backgroundColor" format="color" />
     <attr name="textColor" format="color" />
     <attr name="textSize" format="dimension" />
+    <attr name="textVisible" format="boolean" />
 
     <attr name="circleWidth" format="dimension" />
     <attr name="speed" format="integer" />
@@ -39,8 +40,8 @@
         <attr name="circleWidth" />
         <attr name="progressColor" />
         <attr name="backgroundColor" />
-        <attr name="textColor"/>
-        <attr name="textSize"/>
+        <attr name="textColor" />
+        <attr name="textSize" />
         <attr name="speed" />
     </declare-styleable>
 
@@ -52,5 +53,8 @@
         <attr name="splitSize" />
         <attr name="centerPic" />
         <attr name="centralAngle" />
+        <attr name="textColor" />
+        <attr name="textSize" />
+        <attr name="textVisible" />
     </declare-styleable>
 </resources>

@@ -41,6 +41,26 @@ public class CustomVolumControlBar extends CustomBaseView {
      * 画笔
      */
     private Paint mPaint;
+    private Rect mRect;
+
+    //百分比文字
+    private Paint mTextPaint;
+    private Rect mTextBound;
+
+    /**
+     * 百分比文字大小
+     */
+    private int mPercentTextSize;
+
+    /**
+     * 百分比文字颜色
+     */
+    private int mPercentTextColor;
+
+    /**
+     * 是否显示百分比文字
+     */
+    private boolean mTextVisible = true;
 
     /**
      * 当前进度，默认起始时是 3
@@ -67,8 +87,6 @@ public class CustomVolumControlBar extends CustomBaseView {
      */
     private int mCentralAangle;
 
-    private Rect mRect;
-
     public CustomVolumControlBar(Context context) {
         this(context, null);
     }
@@ -89,6 +107,16 @@ public class CustomVolumControlBar extends CustomBaseView {
 
         mPaint = new Paint();
         mRect = new Rect();
+        mPaint.setAntiAlias(true); // 消除锯齿
+        mPaint.setStrokeWidth(mCircleWidth); // 设置圆环的宽度
+        mPaint.setStrokeCap(Paint.Cap.ROUND); // 定义线段断点形状为圆头
+        mPaint.setStyle(Paint.Style.STROKE); // 设置空心
+
+        mTextBound = new Rect();
+        mTextPaint = new Paint();
+        mTextPaint.setAntiAlias(true);//消除锯齿
+        mTextPaint.setTextSize(mPercentTextSize);
+        mTextPaint.setColor(mPercentTextColor);
     }
 
     @Override
@@ -109,6 +137,12 @@ public class CustomVolumControlBar extends CustomBaseView {
 
         mCentralAangle = typedArray.getInt(R.styleable.CustomVolumControlBar_centralAngle, 360);//默认是圆形，小于360则显示为圆弧
 
+        mPercentTextSize = typedArray.getDimensionPixelSize(R.styleable.CustomVolumControlBar_textSize, StringUtils.getSp(mContext, 14));
+
+        mPercentTextColor = typedArray.getColor(R.styleable.CustomVolumControlBar_textColor, Color.BLACK);
+
+        mTextVisible = typedArray.getBoolean(R.styleable.CustomVolumControlBar_textVisible, true);
+
         typedArray.recycle();
     }
 
@@ -119,7 +153,11 @@ public class CustomVolumControlBar extends CustomBaseView {
         int specWidthMode = MeasureSpec.getMode(widthMeasureSpec);
         int specWidthSize = MeasureSpec.getSize(widthMeasureSpec);
 
-        int desireWidth = getPaddingLeft() + getPaddingRight() + mImage.getWidth();// 由图片决定的宽
+        if (mTextVisible) {
+            mTextPaint.getTextBounds("100%", 0, "100%".length(), mTextBound);
+        }
+        int desireWidth = getPaddingLeft() + getPaddingRight() + Math.max(mTextBound.width(), mImage.getWidth());// 由图片和文字决定的宽
+
         switch (specWidthMode) {
             case MeasureSpec.EXACTLY:// match_parent or 指定尺寸
                 mWidth = specWidthSize;
@@ -141,11 +179,6 @@ public class CustomVolumControlBar extends CustomBaseView {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        mPaint.setAntiAlias(true); // 消除锯齿
-        mPaint.setStrokeWidth(mCircleWidth); // 设置圆环的宽度
-        mPaint.setStrokeCap(Paint.Cap.ROUND); // 定义线段断点形状为圆头
-        mPaint.setStyle(Paint.Style.STROKE); // 设置空心
-
         int centre = getWidth() / 2; // 获取圆心的x坐标
         int radius = centre - mCircleWidth / 2;// 半径
 
@@ -172,6 +205,13 @@ public class CustomVolumControlBar extends CustomBaseView {
 
         // 绘图
         canvas.drawBitmap(mImage, null, mRect, mPaint);
+
+        //更新百分比数字
+        if (mTextVisible) {
+            String mPercentText = StringUtils.getPercent(mCurrentCount, mCount);
+            mTextPaint.getTextBounds(mPercentText, 0, mPercentText.length(), mTextBound);
+            canvas.drawText(mPercentText, getWidth() / 2 - mTextBound.width() / 2, getHeight() / 2 + mTextBound.height() / 2, mTextPaint);
+        }
     }
 
     /**
@@ -221,6 +261,17 @@ public class CustomVolumControlBar extends CustomBaseView {
             //如果有布局需要发生改变，需要调用requestlayout方法，如果只是刷新动画，则只需要调用invalidate方法。
             invalidate();//调用ondraw()方法，重绘
         }
+    }
+
+    /**
+     * 设置是否显示百分比文字
+     *
+     * @param visible
+     */
+    public void setTextVisible(boolean visible) {
+        mTextVisible = visible;
+
+        invalidate();
     }
 
     /**

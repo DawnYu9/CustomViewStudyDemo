@@ -9,6 +9,7 @@
 2. 线程增加`stopThread`停止标识判断，离开页面时关闭线程
 
     `View`中
+    
     ``` java
     private boolean stopThread = false;
     
@@ -46,6 +47,7 @@
     ```       
 
     `Activity`中
+    
     ```
     @Override
     protected void onDestroy() {
@@ -212,6 +214,14 @@
     }
     ```
 
+5. 控件中心增加百分比文字动态更新进度
+
+    `onMeasure()`中增加对图片和文字宽度的比较，取最大值。百分比文字代码见上。
+    
+    ``` java
+    int desireWidth = getPaddingLeft() + getPaddingRight() + Math.max(mTextBound.width(), mImage.getWidth());// 由图片和文字决定的宽
+    ```
+
 ## 预览
 ![main.png](/preview/pic/main.png)
 ![CustomImg.png](/preview/pic/CustomImg.png)
@@ -219,6 +229,7 @@
 ![CustomProgressBar.gif](/preview/gif/CustomProgressBar.gif)
 ![CustomRandomTextView.gif](/preview/gif/CustomRandomTextView.gif)
 ![CustomVolumControlBar.gif](/preview/gif/CustomVolumControlBar.gif)
+![CustomVolumControlBar_percent.gif](/preview/gif/CustomVolumControlBar_percent.gif)
 
 ## 参考&amp;致谢
 [【Android 自定义控件之起步】](http://blog.csdn.net/lmj623565791/article/category/2680591)

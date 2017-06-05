@@ -45,11 +45,24 @@
             android:layout_below="@+id/tv_3"
             android:inputType="number" />
 
+        <TextView
+            android:id="@+id/tv_4"
+            style="@style/text"
+            android:layout_below="@+id/et_centralAngle"
+            android:layout_marginTop="5dp"
+            android:text="是否显示百分比文字(0,1)：" />
+
+        <EditText
+            android:id="@+id/et_textVisible"
+            style="@style/edittext"
+            android:layout_below="@+id/tv_4"
+            android:hint="0可见，1不可见"
+            android:inputType="number" />
+
         <Button
             android:id="@+id/btn_save"
             style="@style/btn_save"
-            android:layout_below="@+id/et_centralAngle" />
-
+            android:layout_below="@+id/et_textVisible" />
 
         <com.bubble.customviewstudydemo.view.CustomVolumControlBar
             android:id="@+id/customVolumControlBar"
@@ -59,13 +72,16 @@
             android:layout_centerInParent="true"
             android:background="@drawable/shape_stroke_2_corner_2_red"
             android:padding="20dp"
+            cus:backgroundColor="@android:color/holo_red_light"
             cus:centerPic="@mipmap/ic_launcher"
             cus:centralAngle="300"
             cus:circleWidth="8px"
-            cus:dotCount="12"
+            cus:dotCount="15"
             cus:progressColor="@android:color/holo_blue_light"
-            cus:backgroundColor="@android:color/holo_red_light"
-            cus:splitSize="15" />
+            cus:splitSize="15"
+            cus:textColor="@android:color/white"
+            cus:textSize="14sp"
+            cus:textVisible="true" />
     </RelativeLayout>
 
 </ScrollView>
