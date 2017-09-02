@@ -24,7 +24,7 @@ import com.bubble.customviewstudydemo.utils.StringUtils;
  * @author bubble
  * @date 2017/5/10
  */
-public class CustomVolumControlBar extends CustomBaseView {
+public class CustomVolumControlBar extends BaseCustomView {
     /**
      * 进度条填充色
      */

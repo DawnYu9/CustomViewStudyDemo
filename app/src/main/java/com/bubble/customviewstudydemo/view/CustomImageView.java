@@ -22,7 +22,7 @@ import com.bubble.customviewstudydemo.R;
  * @author bubble
  * @date 2017/5/9
  */
-public class CustomImageView extends CustomBaseView {
+public class CustomImageView extends BaseCustomView {
     private Paint mPaint;
     private Rect mTextBound;
     private Rect rect;

@@ -6,13 +6,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/tv_blog"
         style="@style/text"
-        android:text="参考：" />
-
-    <TextView
-        style="@style/text"
-        android:layout_below="@+id/tv_blog"
         android:text="点击刷新4位随机数" />
 
     <com.bubble.customviewstudydemo.view.CustomRandomTextView

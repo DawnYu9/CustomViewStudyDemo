@@ -19,7 +19,7 @@ import com.bubble.customviewstudydemo.utils.StringUtils;
  * @author bubble
  * @date 2017/5/10
  */
-public class CustomProgressBar extends CustomBaseView {
+public class CustomProgressBar extends BaseCustomView {
     /**
      * 进度条颜色
      */

@@ -24,17 +24,15 @@ public class CustomProgressBarActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        init(R.layout.activity_custom_pgbar);
+        init(R.layout.activity_custom_pgbar, true, true);
     }
 
     @Override
     public void initView() {
-        super.initView();
-
-        et_length = (EditText) findViewById(R.id.et_length);
-        et_padding = (EditText) findViewById(R.id.et_padding);
-        et_speed = (EditText) findViewById(R.id.et_speed);
-        customProgressBar = (CustomProgressBar) findViewById(R.id.customProgressBar);
+        et_length = findView(R.id.et_length);
+        et_padding = findView(R.id.et_padding);
+        et_speed = findView(R.id.et_speed);
+        customProgressBar = findView(R.id.customProgressBar);
     }
 
     @Override

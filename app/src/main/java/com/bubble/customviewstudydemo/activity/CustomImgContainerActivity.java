@@ -16,7 +16,7 @@ public class CustomImgContainerActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        init(R.layout.activity_custom_img_container);
+        init(R.layout.activity_custom_img_container, true, false);
     }
 
     @Override

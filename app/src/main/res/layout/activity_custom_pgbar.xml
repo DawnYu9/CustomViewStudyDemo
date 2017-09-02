@@ -5,22 +5,15 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tv_blog"
-        style="@style/text"
-        android:text="参考：" />
-
-    <TextView
         android:id="@+id/tv_1"
         style="@style/text"
         android:layout_alignBottom="@+id/et_length"
-        android:layout_below="@+id/tv_blog"
         android:gravity="center_vertical"
         android:text="layout_width：" />
 
     <EditText
         android:id="@+id/et_length"
         style="@style/edittext"
-        android:layout_below="@+id/tv_blog"
         android:layout_toEndOf="@+id/tv_1"
         android:hint="@string/custom_length_hint" />
 

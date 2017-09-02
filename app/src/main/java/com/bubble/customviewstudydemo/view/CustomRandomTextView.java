@@ -23,7 +23,7 @@ import java.util.Set;
  * @author bubble
  * @date 17/5/9
  */
-public class CustomRandomTextView extends CustomBaseView {
+public class CustomRandomTextView extends BaseCustomView {
     /**
      * 文本
      */

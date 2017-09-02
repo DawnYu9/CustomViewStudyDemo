@@ -1,7 +1,6 @@
 package com.bubble.customviewstudydemo.activity;
 
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.EditText;
 
 import com.bubble.customviewstudydemo.R;
@@ -23,26 +22,22 @@ public class CustomVolumControlActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        init(R.layout.activity_custom_volumbar);
+        init(R.layout.activity_custom_volumbar, true, true);
     }
 
     @Override
     public void initView() {
-        super.initView();
+        et_length = findView(R.id.et_length);
+        et_centralAngle = findView(R.id.et_centralAngle);
+        et_textVisible = findView(R.id.et_textVisible);
 
-        et_length = (EditText) findViewById(R.id.et_length);
-        et_centralAngle = (EditText) findViewById(R.id.et_centralAngle);
-        et_textVisible = (EditText) findViewById(R.id.et_textVisible);
+        btn_save = findView(R.id.btn_save);
 
-        btn_save = (Button) findViewById(R.id.btn_save);
-
-        customVolumControlBar = (CustomVolumControlBar) findViewById(R.id.customVolumControlBar);
+        customVolumControlBar = findView(R.id.customVolumControlBar);
     }
 
     @Override
     public void initData() {
-        super.initData();
-
         setTitle("CustomVolumControlActivity");
 
         setBlogInfo("Android 自定义View (四) 视频音量调控",

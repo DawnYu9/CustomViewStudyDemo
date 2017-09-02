@@ -16,7 +16,7 @@ public class CustomRandomTvActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        init(R.layout.activity_custom_random_tv);
+        init(R.layout.activity_custom_random_tv, true, false);
     }
 
     @Override

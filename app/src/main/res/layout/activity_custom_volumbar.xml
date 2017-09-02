@@ -9,14 +9,8 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/tv_blog"
-            style="@style/text"
-            android:text="参考：" />
-
-        <TextView
             android:id="@+id/tv_1"
             style="@style/text"
-            android:layout_below="@+id/tv_blog"
             android:text="红色方框内上下滑动调节音量" />
 
         <TextView

@@ -13,20 +13,20 @@ import android.view.View;
  * @author bubble
  * @date 2017/5/26
  */
-public class CustomBaseView extends View {
+public class BaseCustomView extends View {
     public Context mContext;
 
     public TypedArray typedArray;
 
-    public CustomBaseView(Context context) {
+    public BaseCustomView(Context context) {
         super(context);
     }
 
-    public CustomBaseView(Context context, @Nullable AttributeSet attrs) {
+    public BaseCustomView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public CustomBaseView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public BaseCustomView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
         mContext = context;

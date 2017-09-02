@@ -35,19 +35,19 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        init(R.layout.activity_main);
+        init(R.layout.activity_main, false, false);
     }
 
     @Override
     public void initView() {
-        tv_github = (TextView) findViewById(R.id.tv_github);
+        tv_github = findView(R.id.tv_github);
 
         Button btn_customtitleview, btn_customimageview, btn_customprogressbar, btn_customvolumcontrolbar, btn_customimgcontainer;
-        btn_customtitleview = (Button) findViewById(R.id.btn_customtitleview);
-        btn_customimageview = (Button) findViewById(R.id.btn_customimageview);
-        btn_customprogressbar = (Button) findViewById(R.id.btn_customprogressbar);
-        btn_customvolumcontrolbar = (Button) findViewById(R.id.btn_customvolumcontrolbar);
-        btn_customimgcontainer = (Button) findViewById(R.id.btn_customimgcontainer);
+        btn_customtitleview = findView(R.id.btn_customtitleview);
+        btn_customimageview = findView(R.id.btn_customimageview);
+        btn_customprogressbar = findView(R.id.btn_customprogressbar);
+        btn_customvolumcontrolbar = findView(R.id.btn_customvolumcontrolbar);
+        btn_customimgcontainer = findView(R.id.btn_customimgcontainer);
 
         btnList = new ArrayList<>();
         btnList.add(btn_customtitleview);
@@ -59,8 +59,6 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void initData() {
-        super.initData();
-
         tv_github.setText(Html.fromHtml("源码：<a href='" + GITHUB_URL + "'>" + GITHUB_NAME + "</a>"));
         tv_github.setMovementMethod(LinkMovementMethod.getInstance());
     }
@@ -74,8 +72,6 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void onMyClick(View v) {
-        super.onMyClick(v);
-
         switch (v.getId()) {
             case R.id.btn_customtitleview:
                 startActivity(new Intent(mContext, CustomRandomTvActivity.class));
