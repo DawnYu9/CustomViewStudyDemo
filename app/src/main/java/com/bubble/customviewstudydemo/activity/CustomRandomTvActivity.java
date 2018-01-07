@@ -8,7 +8,7 @@ import com.bubble.customviewstudydemo.R;
  * description: 点击切换4位随机数
  * version:
  *
- * @author bubble
+ * @author DawnYu
  * @date 2017/5/18
  */
 public class CustomRandomTvActivity extends BaseActivity {

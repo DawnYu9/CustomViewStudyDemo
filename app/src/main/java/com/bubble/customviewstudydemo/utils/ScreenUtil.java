@@ -9,7 +9,7 @@ import android.view.WindowManager;
  * description: 屏幕工具类
  * version:
  *
- * @author bubble
+ * @author DawnYu
  * @date 2017/5/10
  */
 public class ScreenUtil {

@@ -7,7 +7,7 @@ import android.util.TypedValue;
  * description: 字符串工具类
  * version:
  *
- * @author bubble
+ * @author DawnYu
  * @date 2017/5/24
  */
 public class StringUtils {

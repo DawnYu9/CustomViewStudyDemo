@@ -10,7 +10,7 @@ import android.view.View;
  * description:
  * version:
  *
- * @author bubble
+ * @author DawnYu
  * @date 2017/5/26
  */
 public class BaseCustomView extends View {

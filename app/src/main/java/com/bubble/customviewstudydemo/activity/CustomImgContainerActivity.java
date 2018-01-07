@@ -8,7 +8,7 @@ import com.bubble.customviewstudydemo.R;
  * description:
  * version:
  *
- * @author bubble
+ * @author DawnYu
  * @date 2017/5/18
  */
 public class CustomImgContainerActivity extends BaseActivity {

@@ -19,7 +19,7 @@ import com.bubble.customviewstudydemo.R;
  * version:
  * blog: http://blog.csdn.net/lmj623565791/article/details/24300125
  *
- * @author bubble
+ * @author DawnYu
  * @date 2017/5/9
  */
 public class CustomImageView extends BaseCustomView {

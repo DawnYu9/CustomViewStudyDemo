@@ -20,7 +20,7 @@ import com.bubble.customviewstudydemo.utils.StringUtils;
  * description:
  * version:
  *
- * @author bubble
+ * @author DawnYu
  * @date 2017/5/24
  */
 public class BaseActivity extends AppCompatActivity {

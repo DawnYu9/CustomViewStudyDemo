@@ -9,7 +9,7 @@ import android.view.ViewGroup;
  * description:
  * version:
  *
- * @author bubble
+ * @author DawnYu
  * @date 2017/5/16
  */
 public class CustomImgContainer extends ViewGroup {

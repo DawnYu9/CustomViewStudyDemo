@@ -12,7 +12,7 @@ import com.bubble.customviewstudydemo.view.CustomProgressBar;
  * description: 圆环进度条
  * version:
  *
- * @author bubble
+ * @author DawnYu
  * @date 2017/5/18
  */
 public class CustomProgressBarActivity extends BaseActivity {

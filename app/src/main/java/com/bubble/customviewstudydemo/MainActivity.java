@@ -21,14 +21,14 @@ import java.util.ArrayList;
  * description:
  * version:
  *
- * @author bubble
+ * @author DawnYu
  * @date 2017/5/9
  */
 public class MainActivity extends BaseActivity {
     private ArrayList<Button> btnList;
     private TextView tv_github;
 
-    private static final String GITHUB_URL = "https://github.com/codingbubble/CustomViewStudyDemo";
+    private static final String GITHUB_URL = "https://github.com/DawnYu9/CustomViewStudyDemo";
     private static final String GITHUB_NAME = "github";
 
     @Override

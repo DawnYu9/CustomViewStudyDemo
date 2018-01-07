@@ -20,7 +20,7 @@ import java.util.Set;
  * version:
  * blog: http://blog.csdn.net/lmj623565791/article/details/24252901
  *
- * @author bubble
+ * @author DawnYu
  * @date 17/5/9
  */
 public class CustomRandomTextView extends BaseCustomView {

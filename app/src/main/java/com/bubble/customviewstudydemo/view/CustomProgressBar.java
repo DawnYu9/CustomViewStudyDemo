@@ -16,7 +16,7 @@ import com.bubble.customviewstudydemo.utils.StringUtils;
  * version:
  * blog: http://blog.csdn.net/lmj623565791/article/details/24500107
  *
- * @author bubble
+ * @author DawnYu
  * @date 2017/5/10
  */
 public class CustomProgressBar extends BaseCustomView {
